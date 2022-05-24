@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/books-icon.png" type="image/x-icon">
+  <title>Admin Panel</title>
+
+  <!-- links -->
+
+  <link rel="stylesheet" href="style/admin.css">
+  <script src="js/admin.js" defer></script>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css' integrity='sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==' crossorigin='anonymous'/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Spectral:wght@300;400;500;600&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+</head>
+<body>
+  
+  <div class="body_container">
+
+    <aside class="sidemenu">
+
+      <div class="logo">
+        <span class="menu-icon"><i class="fa-solid fa-book-bookmark"></i></span>
+        <span class="menu-name">Kitabipsum</span>
+      </div>
+  
+      <ul class="menu-ul">
+  
+        <li data-for="#dashboard">
+          <span class="menu-icon"><i class="fa-solid fa-home"></i></span>
+          <span class="menu-name">Dashboard</span>
+        </li>
+  
+        <li data-for="#mehsullar" class="active">
+          <span class="menu-icon"><i class="fa-solid fa-box"></i></span>
+          <span class="menu-name">Məhsullar</span>
+        </li>
+  
+        <li data-for="#sifarisler">
+          <span class="menu-icon"><i class="fa-solid fa-dolly"></i></span>
+          <span class="menu-name">Sifarişlər</span>
+        </li>
+  
+        <li data-for="#istifadeciler">
+          <span class="menu-icon"><i class="fa-solid fa-users"></i></span>
+          <span class="menu-name">İstifadəçilər</span>
+        </li>
+  
+        <li data-for="#elaqe">
+          <span class="menu-icon"><i class="fa-solid fa-address-card"></i></span>
+          <span class="menu-name">Əlaqə səhifəsi</span>
+        </li>
+  
+        <li data-for="#xeberler">
+          <span class="menu-icon"><i class="fa-solid fa-newspaper"></i></span>
+          <span class="menu-name">Xəbərlər səhifəsi</span>
+        </li>
+  
+        <li>
+          <span class="menu-icon"><i class="fa-solid fa-face-meh"></i></span>
+          <span class="menu-name">Lorem ipsum</span>
+        </li>
+  
+        <li>
+          <span class="menu-icon"><i class="fa-solid fa-face-meh"></i></span>
+          <span class="menu-name">Lorem ipsum</span>
+        </li>
+  
+        <li>
+          <span class="menu-icon"><i class="fa-solid fa-face-meh"></i></span>
+          <span class="menu-name">Lorem ipsum</span>
+        </li>
+  
+        <li>
+          <span class="menu-icon"><i class="fa-solid fa-face-meh"></i></span>
+          <span class="menu-name">Lorem ipsum</span>
+        </li>
+  
+        <li>
+          <span class="menu-icon"><i class="fa-solid fa-face-meh"></i></span>
+          <span class="menu-name">Lorem ipsum</span>
+        </li>
+  
+        <li>
+          <span class="menu-icon"><i class="fa-solid fa-face-meh"></i></span>
+          <span class="menu-name">Lorem ipsum</span>
+        </li>
+  
+        <li>
+          <span class="menu-icon"><i class="fa-solid fa-face-meh"></i></span>
+          <span class="menu-name">Lorem ipsum</span>
+        </li>
+  
+        <li>
+          <span class="menu-icon"><i class="fa-solid fa-face-meh"></i></span>
+          <span class="menu-name">Lorem ipsum</span>
+        </li>
+  
+        <li>
+          <span class="menu-icon"><i class="fa-solid fa-face-meh"></i></span>
+          <span class="menu-name">Lorem ipsum</span>
+        </li>
+  
+        <li>
+          <span class="menu-icon"><i class="fa-solid fa-face-meh"></i></span>
+          <span class="menu-name">Lorem ipsum</span>
+        </li>
+  
+      </ul>
+  
+  
+    </aside>
+  
+  
+    <header>
+  
+      <button id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+  
+      <div class="searchbar">
+        <label for="searchinput">
+          <i class="fa fa-search"></i>
+        </label>
+        <input type="text" id="searchinput" placeholder="Axtar..">
+      </div>
+
+      <!-- <button id="darkmode">
+        <i class="fa fa-moon"></i>
+      </button> -->
+  
+      <img src="img/male.png" alt="male face" width="30px">
+
+  
+    </header>
+  
+  
+    <main>
+
+  
+      <section id="dashboard">
+
+      </section>
+
+
+      <section id="mehsullar">
+
+        <h2>Məhsulların siyahısı</h2>
+
+        <table id="mytable">
+          <tbody id="mytable_body">
+
+          </tbody>
+        </table>
+
+        <h2>Yeni məhsul əlavə et</h2>
+
+        <div class="yeniMehsulDiv">
+
+          <label for="yenimehsulad">Kitabın adı</label>
+          <input type="text" id="yenimehsulad">
+
+          <label for="yenimehsulyazar">Kitabın yazıçısı (və ya nəşriyyatı)</label>
+          <input type="text" id="yenimehsulyazar">
+
+          <label for="yenimehsulqiymet">Kitabın qiyməti</label>
+          <input type="number" id="yenimehsulqiymet" min="0">
+
+          <label for="yenimehsulstok">Kitabın stokdakı sayı</label>
+          <input type="number" id="yenimehsulstok" min="0">
+
+          <br>
+          <label for="yenimehsuldil">Kitabın dilini seçin</lab>
+          <select id="yenimehsuldil">
+            <option value="eng">eng</option>
+            <option value="tr">tr</option>
+          </select>
+          
+          <button id="mehsulelavebtn">Əlavə et</button>
+        </div>
+
+      </section>
+
+
+      <section id="sifarisler">
+
+      </section>
+
+
+      <section id="istifadeciler">
+
+      </section>
+
+
+      <section id="elaqe">
+
+      </section>
+
+
+      <section id="xeberler">
+
+      </section>
+
+
+  
+    </main>
+
+  </div>
+
+
+  <script src="js/kitablar.js"></script>
+  <script src="js/admin.js"></script>
+  
+  
+</body>
+</html>

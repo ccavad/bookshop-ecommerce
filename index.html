@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/books-icon.png" type="image/x-icon">
+  <title>Kitabipsum - satış, dropshipping, icarə xidmətləri</title>
+  <!-- meta teqler -->
+
+  <!-- links -->
+  <link rel="stylesheet" href="style/style.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css' integrity='sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==' crossorigin='anonymous'/>
+  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js' integrity='sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==' crossorigin='anonymous'></script> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Spectral:wght@300;400;500;600&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+  
+<header>
+  <div class="header-top">
+    <small>Bakı daxilində 30 AZN-dən yuxarı sifarişlərdə çatdırılma pulsuz.</small>
+  </div>
+
+  <div class="header-bottom">
+
+    <button id="hamburgerbtn">
+      <i class="fa fa-bars"></i>
+    </button>
+
+    <ul class="nav_menu">
+      <li class="active nav-li">
+        <button data-for="#anasehife" class="navMenuBtn">Ana Səhifə</button>
+      </li>
+      <li class="nav-li">
+        <button data-for="#mehsullar" class="navMenuBtn">Məhsullar</button>
+      </li>
+      <li class="dropdown-menu nav-li">
+        <button id="dropdownbtn">Biz <i class="fa-solid fa-angle-down"></i></button>
+        <ul class="dropdown-content">
+          <li>
+            <button data-for="#haqqimizda" class="navMenuBtn">Haqqımızda</button>
+          </li>
+          <li>
+            <button data-for="#xidmetler" class="navMenuBtn">Xidmətlər</button>
+          </li>
+          <li>
+            <button data-for="#xeberler" class="navMenuBtn">Xəbərlər</button>
+          </li>
+          <li>
+            <button data-for="#elaqe" class="navMenuBtn">Əlaqə</button>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    
+    <a href="index.html" class="headerlogo">
+      <img src="img/logo.svg" alt="logo bookshop">
+    </a>
+
+    <ul class="nav_buttons">
+      <li>
+        <button data-for="#hesab" class="navMenuBtn">
+          <i class="fa fa-user"></i>
+        </button>
+      </li>
+      <li>
+        <button id="cart_btn">
+          <i class="fa fa-cart-shopping"></i>
+          <span id="cart-count">0</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+  
+</header>
+
+<main>
+
+  <aside id="sebet" class="">
+
+    <button id="sebetclosebtn">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <h2>Səbət</h2>
+
+    <div class="container">
+    </div>
+
+    <div class="checkout">
+      <h3>Cəmi: 0 <i class="fa fa-manat-sign"></i></h3>
+      <button id="checkoutbtn">Ödə</button>
+    </div>
+
+  </aside>
+
+
+  <section id="anasehife" class="active">
+    <div class="hero">
+      <img src="img/books.jpg" alt="bookshelf kitab refi">
+      <h1>Möhtəşəm <br> yaz kitab festivalı <br>
+      <span>90%-dək endirimləri qaçırma!</span>
+      </h1>
+    </div>
+
+    <h2>Xaricdən kitab sifarişi, dropshipping</h2>
+
+    <div class="swiper mySwiper"> 
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/agat.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/csharp.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/eng.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/hcob.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/hp.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/one.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/pride.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/suntzu.jpg" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  
+
+  <section id="mehsullar" class="">
+
+    <div class="mehsullar-btns">
+      <ul>
+        <li> 
+          <button id="books_all" class="active">Hamısı</button>
+        </li>
+        <li>
+          <button id="books_eng">İngiliscə</button>
+        </li>
+        <li>
+          <button id="books_tr">Türkcə</button>
+        </li>
+      </ul>
+    </div>
+      
+    <div class="mehsullar-container"></div>
+
+  </section>
+  
+  
+  <section id="xidmetler" class="">
+
+    <div class="xidmetler-hero">
+      <img src="img/books2.jpg" alt="book kitab">
+      <h2>Xidmətlər</h2>
+    </div>
+
+    <div class="pricing-table">
+      <h3>Kitabların icarəsi xidməti</h3>
+      <p>Həftəlik və ya aylıq paket seçərək bizdən kitabları icarə götürə bilərsiz.</p>
+
+      <div class="switch-container">
+        <span>Həftəlik</span>
+        <label class="switch" for="prtswitch">
+          <input type="checkbox" id="prtswitch" />
+          <div class="slider"></div>
+        </label>
+        <span>Aylıq</span>
+      </div>
+
+      <div class="prt-div">
+        <h4>Həftəlik icarə</h4>
+        <h5>2 <i class="fa-solid fa-manat-sign"></i> / həftə</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Vel quia, eaque aliquam consectetur ipsam omnis totam sunt at impedit
+          expedita ab ipsa cupiditate, tempore doloremque aut repudiandae
+          obcaecati cum fugiat?
+        </p>
+        <button>abunə ol</button>
+      </div>
+    </div>
+
+  </section>
+  
+  
+  <section id="haqqimizda" class="">
+
+  </section>
+  
+
+  <section id="xeberler" class="">
+
+  </section>
+
+  
+  <section id="elaqe" class="">
+
+    <h2>Əlaqə</h2>
+
+    <div class="elaqe-grid">
+      
+      <div>
+        <img src="img/undraw-contact.svg" alt="undraw contact illustration">
+      </div>
+      
+      <div class="elaqe-info">
+        <h3>Aşağıda yerləşdirdiyimiz əlaqə vasitələrindən istifadə edərək bizimlə əlaqə saxlaya bilərsiniz</h3>
+        <h4>Telefon: <br> <span id="elaqe-tel">070 999 99 99</span></h4>
+        <h4>E-poçt: <br> <span id="elaqe-email">info@kitabipsum.az</span></h4>
+        <h4>Ünvan: <br> <span id="elaqe-unvan">25d Əhməd Rəcəbli, Bakı, Azərbaycan 1075</span></h4>
+      </div>
+
+      <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24303.97457902275!2d49.85259013748356!3d40.4089211794919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1651655809133!5m2!1sen!2s" width="480" height="360" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="elaqe-form">
+        <h3>Sizinlə əlaqə saxlayaq</h3>
+        <form>
+          <input type="text" placeholder="Adınız" required>
+          <input type="email" placeholder="E-poçtunuz" required>
+          <input type="text" placeholder="Mövzu" required>
+          <input type="text" placeholder="Əlaqə nömrəniz" required>
+          <textarea placeholder="Mesajınız" res></textarea>
+          <button>Göndərin</button>
+        </form>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="hesab" class="">
+
+    <div class="hesabregister">
+
+      <h3>Giriş</h3>
+      <label for="emaillog">Email</label>
+      <input
+        type="email"
+        id="emaillog"
+        placeholder="email adresinizi yazın"
+        required
+      />
+      <label for="passwordlog">Parol</label>
+      <input
+        type="password"
+        id="passwordlog"
+        minlength="6"
+        placeholder="şifrənizi yazın"
+        required
+      />
+      <button id="registerbtn">Daxil Ol</button>
+      <div class="socialicons">
+        <button><i class="fa-brands fa-google"></i></button>
+        <button><i class="fa-brands fa-facebook"></i></button>
+        <button><i class="fa-brands fa-twitter"></i></button>
+      </div>
+
+      <div>Hesabın yoxdu? Onda <button id="qeydkec">hesab yarat</button></div>
+
+    </div>
+
+
+    <div class="hesablogin active">
+
+      <h3>Qeydiyyat</h3>
+      <label for="emailreg">Email</label>
+      <input
+        type="email"
+        id="emailreg"
+        placeholder="məs. poctadi@gmail.com"
+        required
+      />
+      <label for="passwordreg">Parol</label>
+      <input
+        type="password"
+        id="passwordreg"
+        minlength="6"
+        placeholder="doğum tarixiniz olmasın tez taparlar"
+        required
+      />
+      <button id="registerbtn">Üzv ol</button>
+      <div class="socialicons">
+        <button><i class="fa-brands fa-google"></i></button>
+        <button><i class="fa-brands fa-facebook"></i></button>
+        <button><i class="fa-brands fa-twitter"></i></button>
+      </div>
+      <div>Üzv olmusan? Onda <button id="giriset">giriş et</button></div>
+
+    </div>
+
+  </section>
+  
+
+  <div class="overlay"></div>
+
+</main>
+
+<footer>
+  
+  <div class="container">
+    
+    <div>
+      <img src="img/logo.svg" alt="logo">
+    </div>
+
+    <div class="link_cont">
+
+      <ul>
+        <li><strong>Şirkət</strong></li>
+        <li><a href="#">Haqqımızda</a></li>
+        <li><a href="#">Suallar</a></li>
+        <li><a href="#">Əlaqə</a></li>
+      </ul>
+
+      <ul>
+        <li><strong>Mağazalar</strong></li>
+        <li><a href="https://www.amazon.com/books-used-books-textbooks" target="_blank">Amazon</a></li>
+        <li><a href="https://www.kitapyurdu.com/index.php?route=product/best_sellers&list_id=5&filter_in_stock=1" target="_blank">Kitapyurdu</a></li>
+        <li><a href="https://www.idefix.com/CokSatanlar/Kitap" target="_blank">Idefix</a></li>
+      </ul>
+
+      <ul>
+        <li><strong>Xidmətlər</strong></li>
+        <li><a href="#">Dropshipping</a></li>
+        <li><a href="#">Kitab icarəsi</a></li>
+        <li><a href="#">Köhnə kitabların alışı</a></li>
+      </ul>
+
+      <ul>
+        <li><strong>Digər linklər</strong></li>
+        <li><a href="#">Məxfilik qaydaları</a></li>
+        <li><a href="#">Şərtlər və qaydalar</a></li>
+      </ul>
+
+    </div>
+
+    <div>
+      <small>© 2022 KitabIpsum— bütün hüquqlar qorunur</small>
+    </div>
+
+  </div>
+
+
+</footer>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> 
+<script src="js/kitablar.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
