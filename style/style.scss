@@ -600,6 +600,8 @@ input:checked + .slider:before {
     }
   }
   .elaqe-info {
+    max-width: 500px;
+
     h3 {
       color: darkorange;
       margin-bottom: 20px;
@@ -615,6 +617,7 @@ input:checked + .slider:before {
   }
   .elaqe-form {
     padding: 10px 20px;
+    max-width: 500px;
 
     h3 {
       font-size: 2.1rem;
@@ -950,6 +953,24 @@ footer {
   section:not(#anasehife) {
     padding: 50px 60px;
   }
+
+  #elaqe .elaqe-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+
+    > div {
+      margin: 0 auto;
+    }
+
+
+    .elaqe-info {
+      h3 {
+        width: 400px;
+        text-align: center;
+      }
+    }
+  }
 }
 
 @media (min-width: 769px) {
@@ -959,19 +980,6 @@ footer {
 }
 
 @media (max-width: 768px) { 
-
-  #elaqe .elaqe-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    align-items: center;
-
-    .elaqe-info {
-      h3 {
-        width: 400px;
-        text-align: center;
-      }
-    }
-  }
 
   #hesab {
     .hesabregister.active,
