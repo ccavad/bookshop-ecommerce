@@ -239,7 +239,6 @@ mehsullarCont.addEventListener("click", el => {
     if (el.target.classList.contains("card_shop")) { //shop duymesine klikleyende mehsul sebetde gorunsun
         
         let btnid = el.target.closest("button.card_shop").dataset.id;
-        console.log("asd")
 
         if (kitablar[btnid].sebetdekiSayi < kitablar[btnid].stokdakiSayi) {
 
@@ -251,7 +250,6 @@ mehsullarCont.addEventListener("click", el => {
             let sebetdekiKitablar = kitablar.filter(kitab => kitab.sebetdekiSayi > 0);
             sebetdekiKitablar.forEach(kitablariSebeteYazdir)
         }
-        console.log(kitablar[btnid])
     }
 })
 
